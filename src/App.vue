@@ -1,23 +1,59 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <el-col :span="24">
+      <div id="head">
+        <el-row type="flex" justify="center">
+          <el-col :span="3">
+            <div class="head_label">
+              <img src="@/assets/img/logo.png">
+            </div>
+          </el-col>
+          <el-col :span="3">
+            <div class="head_label">
+              教程
+            </div>
+          </el-col>
+          <el-col :span="3">
+            <div class="head_label">
+              关于站长
+            </div>
+          </el-col>
+          <el-col :span="3">
+            <div class="head_label">
+              ---
+            </div>
+          </el-col>
+          <el-col :span="3">
+            <div class="head_label">
+              ---
+            </div>
+          </el-col>
+          <el-col :span="3">
+            <div class="head_label">
+              <router-link to="/path" style="color: #D1D1D1;">
+                登陆
+              </router-link>
+            </div>
+          </el-col>
+        </el-row>
+      </div>
+    </el-col>
+    
+    <router-view />
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+  export default {
+    name: 'App',
+    data() {
+      return {
+        userid: 10
+      }
+    }
+  }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import url("assets/css/base.css");
 </style>

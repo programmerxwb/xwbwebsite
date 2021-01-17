@@ -1,0 +1,21 @@
+@import url("normalize.css");
+
+a {
+  text-decoration: none;
+}
+
+.router-link-active {
+  text-decoration: none;
+}
+
+#head {
+  height: 70px;
+  background-color: #343434;
+}
+
+.head_label {
+  height: 30px;
+  margin-top: 40px;
+  color: #D1D1D1;
+  text-align: center;
+}

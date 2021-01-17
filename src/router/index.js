@@ -1,15 +1,19 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-
 Vue.use(Router)
 
+//声明vue路径
+const template = () => import('@blog/common/Template.vue')
+
+
+
+// 配置路由和组件的映射关系
+const routes = [{
+  path: '/blog',
+  component: template
+}]
+
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
-  ]
+  routes,
+  mode: 'history'
 })
