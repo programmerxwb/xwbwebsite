@@ -19,3 +19,34 @@ a {
   color: #D1D1D1;
   text-align: center;
 }
+
+.blog-model-body {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.blog-model-body .introduction{
+  padding-left: 10px;
+  border-bottom: solid 1px #D1D1D1;
+  border-left: solid 1px #D1D1D1;
+  height: 100%;
+  text-align: left;
+}
+
+.code{
+  background-color: #F9F9F9;
+  border: solid 1px #D1D1D1;
+  text-align: left;
+}
+
+.code .notes{
+  color: blue;
+}
+
+.code .keyword{
+  color: red;
+}
+
+.code p{
+  line-height: 5px;
+}

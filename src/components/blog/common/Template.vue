@@ -5,7 +5,7 @@
         <!--
         <el-switch v-model="isCollapse" active-color="#ff4949" inactive-color="#13ce66">
         </el-switch> -->
-        <el-menu default-active="1" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" :collapse="isCollapse">
+        <el-menu default-active="1" class="el-menu-vertical-demo">
           <el-submenu index="1">
             <template slot="title">
               <i class="el-icon-location"></i>
@@ -13,7 +13,9 @@
             </template>
             <el-menu-item-group>
               <span slot="title">List</span>
-              <el-menu-item index="1-1">ArrayList</el-menu-item>
+              <el-menu-item index="1-1">
+                <router-link to="ArrayList/ArrayList">ArrayList</router-link>
+              </el-menu-item>
               <el-menu-item index="1-2">LinkedList</el-menu-item>
               <el-menu-item index="1-3">Vector</el-menu-item>
             </el-menu-item-group>
@@ -36,6 +38,9 @@
             <span slot="title">导航四</span>
           </el-menu-item>
         </el-menu>
+      </el-col>
+      <el-col :span="20">
+        <router-view />
       </el-col>
     </el-row>
   </div>
