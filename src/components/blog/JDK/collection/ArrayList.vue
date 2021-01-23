@@ -1,6 +1,6 @@
 <template>
   <div class="blog-model-body">
-    <h1>{{title}}</h1>
+    <h1>ArrayList</h1>
     <el-row type="flex" justify="space-around">
       <el-col :span="10">
         <!-- 类的UML-start-->
@@ -124,7 +124,7 @@
       删除数据
       <el-row type="flex" justify="space-around">
         <el-col :span="10">
-          <div>
+          <div style="border-right: solid 1px #D1D1D1;">
             <el-image :src="delUrl" :preview-src-list="srcList"></el-image>
           </div>
         </el-col>
@@ -143,9 +143,9 @@
     <div style="text-align: left;">
       总结：
       <br />
-      1.ArrayList的底层实现为<b>可变数组</b>，为开发人员忽略了底层扩容的细节。由于数组的实现，根据下标直接获取元素，因此查询速度非常快，时间复杂度为O(1)。
+      1.ArrayList的底层实现为<b>可变数组</b>，为开发人员忽略了底层扩容的细节。由于数组的实现，根据下标直接获取元素，因此查询速度非常快，获取以及修改的时间复杂度为O(1)。
       <br />
-      2.为了数组中数据的连续性，在每一次删除元素后，需要把后面的元素全部向前移动一位，所以删除元素的时间复杂度为O(n)。
+      2.为了数组中数据的连续性，在每一次删除元素后，需要把后面的元素全部向前移动一位，最坏情况下删除元素的时间复杂度为O(n)。
     </div>
   </div>
 </template>
@@ -154,18 +154,17 @@
     name: 'App',
     data() {
       return {
-        title: this.$route.params.title,
-        structureUrl: require("@/assets/img/blog/ArrayListStructure.png"),
-        umlUrl: require("@/assets/img/blog/ArrayListUML.png"),
-        addUrl: require("@/assets/img/blog/ArrayListAdd.png"),
-        addIndexUrl: require("@/assets/img/blog/ArrayListAdd_index.png"),
-        delUrl: require("@/assets/img/blog/ArrayListDel.png"),
+        structureUrl: require("@/assets/img/blog/collection/ArrayList/ArrayListStructure.png"),
+        umlUrl: require("@/assets/img/blog/collection/ArrayList/ArrayListUML.png"),
+        addUrl: require("@/assets/img/blog/collection/ArrayList/ArrayListAdd.png"),
+        addIndexUrl: require("@/assets/img/blog/collection/ArrayList/ArrayListAdd_index.png"),
+        delUrl: require("@/assets/img/blog/collection/ArrayList/ArrayListDel.png"),
         srcList: [
-          require("@/assets/img/blog/ArrayListUML.png"),
-          require("@/assets/img/blog/ArrayListUML.png"),
-          require("@/assets/img/blog/ArrayListAdd.png"),
-          require("@/assets/img/blog/ArrayListAdd_index.png"),
-          require("@/assets/img/blog/ArrayListDel.png"),
+          require("@/assets/img/blog/collection/ArrayList/ArrayListStructure.png"),
+          require("@/assets/img/blog/collection/ArrayList/ArrayListUML.png"),
+          require("@/assets/img/blog/collection/ArrayList/ArrayListAdd.png"),
+          require("@/assets/img/blog/collection/ArrayList/ArrayListAdd_index.png"),
+          require("@/assets/img/blog/collection/ArrayList/ArrayListDel.png"),
         ]
       }
     }

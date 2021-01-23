@@ -8,15 +8,28 @@
         <el-menu default-active="1" class="el-menu-vertical-demo">
           <el-submenu index="1">
             <template slot="title">
-              <i class="el-icon-location"></i>
-              <span slot="title">集合框架</span>
+              <router-link to="explain">
+                <div style="height: 100%;width: 100%;">
+                  <i class="el-icon-location"></i>
+                  <span slot="title">
+                    集合框架
+                  </span>
+                </div>
+              </router-link>
             </template>
             <el-menu-item-group>
               <span slot="title">List</span>
-              <el-menu-item index="1-1">
-                <router-link to="ArrayList/ArrayList">ArrayList</router-link>
-              </el-menu-item>
-              <el-menu-item index="1-2">LinkedList</el-menu-item>
+              <router-link to="ArrayList">
+                <el-menu-item index="1-1">
+                  ArrayList
+                </el-menu-item>
+              </router-link>
+              <router-link to="LinkedList">
+                <el-menu-item index="1-2">
+                  LinkedList
+                </el-menu-item>
+              </router-link>
+
               <el-menu-item index="1-3">Vector</el-menu-item>
             </el-menu-item-group>
             <el-menu-item-group title="Map">
@@ -54,8 +67,8 @@
       };
     },
     methods: {
-      menuOpen() {
-        this.isCollapse = !this.isCollapse;
+      explain() {
+        console.log(1);
       }
     }
   }

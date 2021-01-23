@@ -9,7 +9,7 @@
             </div>
           </el-col>
           <el-col :span="3">
-            <div class="head_label">
+            <div class="head_label" >
               <router-link to="/blog" style="color: #D1D1D1">教程</router-link>
             </div>
           </el-col>

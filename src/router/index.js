@@ -6,8 +6,16 @@ Vue.use(Router)
 const template = () => import('@blog/common/Template.vue')
 const bolgChildred = [
   {
-    path: '/ArrayList/:title',
+    path: '/ArrayList',
     component: () => import('@blog/JDK/collection/ArrayList.vue')
+  },
+  {
+    path: '/LinkedList',
+    component: () => import('@blog/JDK/collection/LinkedList.vue')
+  },
+  {
+    path: '/explain',
+    component: () => import('@blog/common/Explain.vue')
   }
 ]
 
