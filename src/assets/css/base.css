@@ -25,7 +25,7 @@ a {
   padding-top: 15px;
 }
 
-.blog-model-body .introduction{
+.blog-model-body .introduction {
   padding-left: 10px;
   border-bottom: solid 1px #D1D1D1;
   border-left: solid 1px #D1D1D1;
@@ -33,20 +33,36 @@ a {
   text-align: left;
 }
 
-.code{
+.code {
   background-color: #F9F9F9;
   border: solid 1px #D1D1D1;
   text-align: left;
 }
 
-.code .notes{
+.code .notes {
   color: blue;
 }
 
-.code .keyword{
+.code .keyword {
   color: red;
 }
 
-.code p{
+.code p {
   line-height: 5px;
+}
+
+.bottom {
+  padding-top: 30px;
+  font-size: 6px;
+  color: #343434;
+}
+
+.explain {
+  height: 1000px;
+  padding-top: 300px;
+  padding-left: 100px;
+}
+
+.textleft{
+  text-align: left;
 }

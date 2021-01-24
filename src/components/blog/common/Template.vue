@@ -29,8 +29,11 @@
                   LinkedList
                 </el-menu-item>
               </router-link>
-
-              <el-menu-item index="1-3">Vector</el-menu-item>
+              <router-link to="Vector">
+                <el-menu-item index="1-3">
+                  Vector
+                </el-menu-item>
+              </router-link>
             </el-menu-item-group>
             <el-menu-item-group title="Map">
               <el-menu-item index="1-4">HashMap</el-menu-item>

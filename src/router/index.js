@@ -14,6 +14,10 @@ const bolgChildred = [
     component: () => import('@blog/JDK/collection/LinkedList.vue')
   },
   {
+    path: '/Vector',
+    component: () => import('@blog/JDK/collection/Vector.vue')
+  },
+  {
     path: '/explain',
     component: () => import('@blog/common/Explain.vue')
   }

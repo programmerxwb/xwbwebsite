@@ -40,6 +40,18 @@
     </el-col>
 
     <router-view />
+    <div class="bottom">
+      
+      <hr />
+      <el-row type="flex" class="row-bg" justify="space-around">
+        <el-col :span="6">
+          © 许文彬的个人网站
+        </el-col>
+        <el-col :span="6">
+          内容均为原创 不得转载
+        </el-col>
+      </el-row>
+    </div>
   </div>
 </template>
 
