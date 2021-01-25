@@ -99,12 +99,12 @@
       </div>
     </div>
     <hr />
-    <div style="text-align: left;">
-      总结：
-      <br />
-      1.LinkedList的底层数据结构为双向链表，在添加删除元素的时候只需要改变节点的引用即可。但是在中间插入元素，或者删除元素的时间复杂度为O(n)。
-      <br />
-      2.区别于ArrayList数组的结构，获取元素的最坏的情况下，时间复杂度为O(n/2)也就是o(n)。
+    <div>
+      <h3>总结</h3>
+      <div style="text-align: left;">
+        1.区别于ArrayList数组的结构，获取元素的最坏的情况下，时间复杂度为O(n/2)也就是o(n)。<br />
+        2.LinkedList的底层数据结构为双向链表，在添加删除元素的时候只需要改变节点的引用即可。但是在中间插入元素，或者删除元素的时间复杂度为O(n)。
+      </div>
     </div>
   </div>
 </template>

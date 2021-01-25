@@ -27,7 +27,7 @@
     <hr />
     <!-- 扩容 -->
     <div>
-      数组的扩容
+      <h3>数组的扩容</h3>
       <el-row type="flex" justify="space-around">
         <el-col :span="10">
           <div class="code">
@@ -101,7 +101,7 @@
     <hr />
     <!-- 添加数据-->
     <div>
-      添加数据
+      <h3>添加数据</h3>
       <el-row type="flex" justify="space-around">
         <el-col :span="10">
           <div style="border-right: solid 1px #D1D1D1;">
@@ -121,7 +121,7 @@
     <hr />
     <!-- 删除数据 -->
     <div>
-      删除数据
+      <h3>删除数据</h3>
       <el-row type="flex" justify="space-around">
         <el-col :span="10">
           <div style="border-right: solid 1px #D1D1D1;">
@@ -140,12 +140,14 @@
       </el-row>
     </div>
     <hr />
-    <div style="text-align: left;">
-      总结：
-      <br />
-      1.ArrayList的底层实现为<b>可变数组</b>，为开发人员忽略了底层扩容的细节。由于数组的实现，根据下标直接获取元素，因此查询速度非常快，获取以及修改的时间复杂度为O(1)。
-      <br />
-      2.为了数组中数据的连续性，在每一次删除元素后，需要把后面的元素全部向前移动一位，最坏情况下删除元素的时间复杂度为O(n)。
+    <div>
+      <h3>总结</h3>
+      <div style="text-align: left;">
+        1.查询、以及修改的时间复杂度为O(1)。<br />
+        2.没有扩容的前提下，尾部添加，时间复杂度为O(1)。根据索引添加数据,最坏情况的时间复杂度为O(n)。<br />
+        3.为了数组中数据的连续性，在每一次删除元素后，需要把后面的元素全部向前移动一位,最坏情况下删除元素的时间复杂度为O(n)。<br />
+
+      </div>
     </div>
   </div>
 </template>

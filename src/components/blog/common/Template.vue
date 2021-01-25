@@ -2,10 +2,7 @@
   <div>
     <el-row>
       <el-col :span="4">
-        <!--
-        <el-switch v-model="isCollapse" active-color="#ff4949" inactive-color="#13ce66">
-        </el-switch> -->
-        <el-menu default-active="1" class="el-menu-vertical-demo">
+        <el-menu class="el-menu-vertical-demo">
           <el-submenu index="1">
             <template slot="title">
               <router-link to="explain">
@@ -32,6 +29,11 @@
               <router-link to="Vector">
                 <el-menu-item index="1-3">
                   Vector
+                </el-menu-item>
+              </router-link>
+              <router-link to="cowList">
+                <el-menu-item index="1-4">
+                  CopyOnWriteArrayList
                 </el-menu-item>
               </router-link>
             </el-menu-item-group>

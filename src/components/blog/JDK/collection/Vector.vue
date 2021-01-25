@@ -21,24 +21,26 @@
     <hr />
     <div>
       <h3>线程安全的区别</h3>
-      <el-image :src="addUrl" :preview-src-list="srcList"></el-image>
+      <el-image :src="addUrl" style="width: 98%;" :preview-src-list="srcList"></el-image>
       <div class="textleft">
         左图为ArrayList，右图为Vector(举例其中的一个方法)。
         <br />
         第一眼看到的结果就是他们的写法不同，但如果深入看一下，发现中心思想是相同的，但是重点的就是vector的add方法中添加了<b>synchronized</b>
         关键字，也就是<b>线程安全的</b>，再去看其他的方法都是一样的，也就是Vector是一个线程安全的容器。
+        <br /><br />
       </div>
     </div>
     <hr />
     <div>
       <h3>扩容的区别</h3>
-      <el-image :src="growUrl" :preview-src-list="srcList"></el-image>
+      <el-image :src="growUrl" style="width: 98%;" :preview-src-list="srcList"></el-image>
       <div class="textleft">
         左图为ArrayList，右图为Vector(举例其中的一个方法)。
         <br />
         可能在意过这里的人都搜索过他们之间的区别，第一个最大的区别就是<b>Arraylist中的扩容是1.5倍的扩容，而Vector的扩容默认是2倍的扩容</b>。
         <br />
         但是Vector中还有一个细节指的注意，可以通过capacityIncrement指定每一次扩容的大小，capacityIncrement的值可以通过构造方法读入的。
+        <br /><br />
       </div>
     </div>
     <hr />

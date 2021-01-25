@@ -20,6 +20,10 @@ const bolgChildred = [
   {
     path: '/explain',
     component: () => import('@blog/common/Explain.vue')
+  },
+  {
+    path: '/cowList',
+    component: () => import('@blog/JDK/collection/CopyOnWriteArrayList.vue')
   }
 ]
 
