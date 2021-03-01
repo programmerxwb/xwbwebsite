@@ -2,28 +2,33 @@ import Vue from 'vue'
 import Router from 'vue-router'
 Vue.use(Router)
 
+import ArrayList from '@blog/JDK/collection/ArrayList.vue'
+import LinkedList from '@blog/JDK/collection/LinkedList.vue'
+import Vector from '@blog/JDK/collection/Vector.vue'
+import Explain from '@blog/common/Explain.vue'
+import CopyOnWriteArrayList from '@blog/JDK/collection/CopyOnWriteArrayList.vue'
 //声明vue路径
 const template = () => import('@blog/common/Template.vue')
 const bolgChildred = [
   {
     path: '/ArrayList',
-    component: () => import('@blog/JDK/collection/ArrayList.vue')
+    component: ArrayList
   },
   {
     path: '/LinkedList',
-    component: () => import('@blog/JDK/collection/LinkedList.vue')
+    component: LinkedList
   },
   {
     path: '/Vector',
-    component: () => import('@blog/JDK/collection/Vector.vue')
+    component: Vector
   },
   {
     path: '/explain',
-    component: () => import('@blog/common/Explain.vue')
+    component: Explain
   },
   {
     path: '/cowList',
-    component: () => import('@blog/JDK/collection/CopyOnWriteArrayList.vue')
+    component: CopyOnWriteArrayList
   }
 ]
 

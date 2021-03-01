@@ -70,11 +70,6 @@
       return {
         isCollapse: false
       };
-    },
-    methods: {
-      explain() {
-        console.log(1);
-      }
     }
   }
 </script>
